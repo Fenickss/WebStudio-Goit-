@@ -1,0 +1,24 @@
+/* НАСТРОЙКИ */
+@import './utils/variables';
+@import './base/normalize';
+@import './utils/placeholders';
+@import './utils/reset';
+@import './utils/mixin';
+
+/* ГЛАВНАЯ СТРАНИЦА */
+@import './components/header';
+@import './components/hero';
+@import './components/feature';
+@import './components/occupation';
+@import './components/team';
+@import './components/customer';
+@import './components/footer';
+
+/* ПОРТФОЛИО */
+@import './components/filter';
+@import './components/project';
+
+
+
+/* МОДАЛЬНОЕ ОКНО */
+@import './components/modal';

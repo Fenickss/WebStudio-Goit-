@@ -1,0 +1,40 @@
+.feature__list {
+  @extend %list;
+  display: flex;
+  align-items: center;
+}
+
+.feature__item + .feature__item {
+  margin-left: 30px;
+}
+
+.feature__background {
+  display: flex;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  background-color: $--background-icon;
+}
+
+.feature__icon {
+  display: inline-flex;
+  flex-wrap: wrap;
+  width: 70px;
+  height: 70px;
+  margin-top: 25px;
+  margin-left: 100px;
+}
+
+.feature__title {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.14;
+}
+
+.feature__text {
+  color: $--paragraph-text-color;
+  font-size: 14px;
+  line-height: 1.71;
+}
