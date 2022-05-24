@@ -294,12 +294,6 @@ body {
   margin-right: auto;
 }
 
-@media screen and (min-width: 480px) {
-  .container {
-    width: 480px;
-  }
-}
-
 .header {
   border: 1px solid #ececec;
 }
@@ -317,12 +311,6 @@ body {
   color: #212121;
 }
 
-@media screen and (min-width: 480px) {
-  .header__logo {
-    width: 480px;
-  }
-}
-
 .container__header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -330,13 +318,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-@media screen and (min-width: 480px) {
-  .container__header {
-    width: 480px;
-    display: none;
-  }
 }
 
 .nav__list {
