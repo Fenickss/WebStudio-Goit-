@@ -263,6 +263,10 @@ summary {
   display: list-item;
 }
 
+.feature__list {
+  list-style: none;
+}
+
 h1,
 h2,
 h3,
@@ -377,6 +381,35 @@ body {
   background-color: #188ce8;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.feature__background {
+  height: 120px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  /* background-color: $--background-icon; */
+  background-color: tomato;
+}
+
+.feature__icon {
+  width: 70px;
+  height: 70px;
+  margin-top: 7%;
+  margin-left: 40%;
+}
+
+.feature__title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.14;
+  margin-bottom: 10px;
+}
+
+.feature__text {
+  font-size: 14px;
+  line-height: 1.71;
+  margin-bottom: 30px;
+  color: #757575;
 }
 
 /* ПОРТФОЛИО */
