@@ -412,6 +412,18 @@ body {
   color: #757575;
 }
 
+.section__occupation {
+  display: none;
+}
+
+.occupation__primariTitle {
+  display: none;
+}
+
+.occupation__listImg {
+  display: none;
+}
+
 /* ПОРТФОЛИО */
 /* МОДАЛЬНОЕ ОКНО */
 /*# sourceMappingURL=main.css.map */
