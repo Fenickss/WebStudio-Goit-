@@ -110,10 +110,9 @@
   &:hover,
   &:focus {
     background-color: $--accent-color;
-
-    &:last-child {
-      margin-right: 0;
-    }
+  }
+  &:last-child {
+    margin-right: 0;
   }
 }
 
