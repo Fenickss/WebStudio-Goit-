@@ -10,6 +10,7 @@
 
   @media screen and (min-width: 768px) {
     width: 768px;
+    
   }
 }
 
@@ -35,7 +36,6 @@
 @media screen and (min-width: 768px) {
   .container__header {
     display: flex;
-    
   }
 }
 
@@ -101,35 +101,38 @@
   @media screen and (max-width: 768px) {
     display: none;
   }
+
+  @media screen and (min-width: 768px) {
+    flex-direction: column;
+  }
 }
 
 .contact__item {
-  margin-right: 50px;
+  margin-bottom: 10px;
 
   &:last-child {
-    margin-right: 0;
-  }
-
-  @media screen and (max-width: 768px) {
-    display: nona;
+    margin-bottom: 0;
   }
 }
 
 .contact__mail {
-  color: $--paragraph-text-color;
-  fill: $--paragraph-text-color;
+  display: flex;
+  align-items: center;
+  color: #757575;
+  fill: #757575;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   text-decoration: none;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.14;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
     color: $--accent-color;
     fill: $--accent-color;
   }
+}
+.contact__icon--width {
+  max-height: 16px;
+  max-width: 16px;
+  margin-right: 10px;
 }
 
 .contact__icon {
@@ -147,14 +150,12 @@
 }
 
 .contact__tel {
-  color: $--paragraph-text-color;
-  fill: $--paragraph-text-color;
+  display: flex;
+  align-items: center;
+  color: #757575;
+  fill: #757575;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   text-decoration: none;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.14;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {

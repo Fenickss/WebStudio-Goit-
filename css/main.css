@@ -400,34 +400,46 @@ body {
   }
 }
 
-.contact__item {
-  margin-right: 50px;
-}
-
-.contact__item:last-child {
-  margin-right: 0;
-}
-
-@media screen and (max-width: 768px) {
-  .contact__item {
-    display: nona;
+@media screen and (min-width: 768px) {
+  .contact__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
+.contact__item {
+  margin-bottom: 10px;
+}
+
+.contact__item:last-child {
+  margin-bottom: 0;
+}
+
 .contact__mail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #757575;
   fill: #757575;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   text-decoration: none;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.14;
-  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact__mail:hover, .contact__mail:focus {
   color: #2196F3;
   fill: #2196F3;
+}
+
+.contact__icon--width {
+  max-height: 16px;
+  max-width: 16px;
+  margin-right: 10px;
 }
 
 .contact__icon {
@@ -449,14 +461,17 @@ body {
 }
 
 .contact__tel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #757575;
   fill: #757575;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   text-decoration: none;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.14;
-  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact__tel:hover, .contact__tel:focus {
@@ -473,8 +488,8 @@ body {
 }
 
 .hero {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero.jpg);
-  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/hero.jpg);
+  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   /* min-height: 400px; */
@@ -487,14 +502,11 @@ body {
 }
 
 .hero__title {
-  display: inline-block;
   width: 360px;
-  font-style: normal;
   font-weight: 900;
   font-size: 26px;
   line-height: 42px;
   margin-bottom: 30px;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
@@ -589,11 +601,26 @@ body {
 }
 
 .team__primariTitle {
+  letter-spacing: 0.03em;
   text-align: center;
-  margin-bottom: 50px;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.14;
+  font-size: 28px;
+  line-height: 1.17;
+  padding-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .team__list {
+    width: 737px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .team__item {
@@ -601,6 +628,12 @@ body {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .team__item {
+    width: 354px;
+  }
 }
 
 .team__img {
