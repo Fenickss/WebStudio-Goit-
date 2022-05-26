@@ -1,0 +1,42 @@
+.main__primariTitle {
+  display: none;
+}
+
+.filter-link {
+  margin-bottom: 15px;
+
+  padding: 6px 22px;
+
+  border-radius: 4px;
+  border-width: 0;
+
+  font-weight: 500;
+  line-height: 1.62;
+
+  cursor: pointer;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $--accent-color;
+    color: $--primary-white-color;
+  }
+
+  &__colorBlue {
+    background-color: $--accent-color;
+    color: $--primary-white-color;
+  }
+
+  &:first-child {
+    margin-top: 60px;
+  }
+
+  &:last-child{
+      margin-bottom: 40px;
+  }
+}

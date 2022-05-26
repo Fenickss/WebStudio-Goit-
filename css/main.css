@@ -523,7 +523,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 159px;
+  width: 157px;
   height: 83px;
   padding: 7px 33px;
   fill: #AFB1B8;
@@ -657,7 +657,7 @@ body {
   background-color: #2196F3;
 }
 
-.social__icon:hover:last-child, .social__icon:focus:last-child {
+.social__icon:last-child {
   margin-right: 0;
 }
 
@@ -716,5 +716,43 @@ body {
 }
 
 /* ПОРТФОЛИО */
+.main__primariTitle {
+  display: none;
+}
+
+.filter-link {
+  margin-bottom: 15px;
+  padding: 6px 22px;
+  border-radius: 4px;
+  border-width: 0;
+  font-weight: 500;
+  line-height: 1.62;
+  cursor: pointer;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.filter-link:last-child {
+  margin-right: 0;
+}
+
+.filter-link:hover, .filter-link:focus {
+  background-color: #2196F3;
+  color: #FFFFFF;
+}
+
+.filter-link__colorBlue {
+  background-color: #2196F3;
+  color: #FFFFFF;
+}
+
+.filter-link:first-child {
+  margin-top: 60px;
+}
+
+.filter-link:last-child {
+  margin-bottom: 40px;
+}
+
 /* МОДАЛЬНОЕ ОКНО */
 /*# sourceMappingURL=main.css.map */
