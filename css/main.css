@@ -716,10 +716,13 @@ body {
   margin-bottom: 0;
 }
 
+@media screen and (min-width: 768px) {
+  .customer__item {
+    margin-right: 0;
+  }
+}
+
 .customer__icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   width: 157px;
   height: 83px;
   padding: 7px 33px;
@@ -733,6 +736,13 @@ body {
 .customer__icon:hover, .customer__icon:focus {
   fill: #2196F3;
   border: 1px solid #2196F3;
+}
+
+@media screen and (min-width: 768px) {
+  .customer__icon {
+    width: 226px;
+    height: 92px;
+  }
 }
 
 .footer {
