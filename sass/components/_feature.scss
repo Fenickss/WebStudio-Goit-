@@ -3,33 +3,28 @@
 
   @media screen and( min-width: 768px) {
     display: flex;
-    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
   }
 }
 
-.feature__item + .feature__item {
-  @media screen and( min-width: 768px){
-    margin-left: 30px;
+
+.feature__item{
+  @media screen and( min-width: 768px) {
+    width: 354px;
   }
 }
 
 .feature__background {
-  height: 120px;
+   height: 120px;
   margin-bottom: 30px;
   border-radius: 4px;
 
-  /* background-color: $--background-icon; */
-  background-color: tomato;
+   background-color: $--background-icon; 
+  background-color: tomato; 
 
-  @media screen and( min-width: 768px) {
-    display: flex;
-  min-width: 480px;
-  height: 120px;
-  margin-bottom: 30px;
-  border-radius: 4px;
-  background-color: $--background-icon;
-  background-color: tomato;
-  }
+  
 }
 
 .feature__icon {

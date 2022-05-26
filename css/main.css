@@ -473,12 +473,11 @@ body {
 }
 
 .hero {
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/hero.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero.jpg);
-  max-width: 1600px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero.jpg);
+  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 400px;
+  /* min-height: 400px; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -534,15 +533,17 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .feature__item + .feature__item {
-    margin-left: 30px;
+  .feature__item {
+    width: 354px;
   }
 }
 
@@ -550,22 +551,8 @@ body {
   height: 120px;
   margin-bottom: 30px;
   border-radius: 4px;
-  /* background-color: $--background-icon; */
+  background-color: #F5F4FA;
   background-color: tomato;
-}
-
-@media screen and (min-width: 768px) {
-  .feature__background {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    min-width: 480px;
-    height: 120px;
-    margin-bottom: 30px;
-    border-radius: 4px;
-    background-color: #F5F4FA;
-    background-color: tomato;
-  }
 }
 
 .feature__icon {
