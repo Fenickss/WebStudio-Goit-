@@ -912,6 +912,15 @@ body {
   color: #FFFFFF;
 }
 
+@media screen and (min-width: 768px) {
+  .formFooter__input {
+    display: block;
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .form__button {
   position: relative;
   display: -webkit-box;
