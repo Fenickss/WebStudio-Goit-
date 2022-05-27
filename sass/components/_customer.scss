@@ -25,15 +25,12 @@
   } */
 
   @media screen and(min-width: 768px) {
-  margin-right: 30px;
+    margin-right: 30px;
 
-   &:nth-last-child(3n + 1) {
-    margin-right: 0;
-
+    &:nth-last-child(3n + 1) {
+      margin-right: 0;
+    }
   }
-
-  }
-
 }
 
 .customer__icon {
