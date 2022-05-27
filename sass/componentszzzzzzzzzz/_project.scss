@@ -3,6 +3,11 @@
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 94px;
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    
+  }
 }
 
 .project__item {

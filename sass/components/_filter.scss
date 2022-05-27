@@ -2,6 +2,12 @@
   display: none;
 }
 
+.container__filter--position {
+  @media screen and (min-width: 768px) {
+    text-align: center;
+  }
+}
+
 .filter-link {
   margin-bottom: 15px;
 
@@ -36,7 +42,10 @@
     margin-top: 60px;
   }
 
-  &:last-child{
-      margin-bottom: 40px;
+  &:last-child {
+    margin-bottom: 40px;
   }
+
+
+  
 }
