@@ -3,6 +3,13 @@
   background-color: #2f303a;
 }
 
+.footer__logo--position {
+  @media screen and (min-width: 768px) {
+    display: inline-flex;
+    align-items: flex-start;
+  }
+}
+
 .footer__logo {
   display: block;
   text-align: center;
@@ -76,6 +83,12 @@
   &:hover,
   &:focus {
     color: $--accent-color;
+  }
+}
+
+.social{
+  @media screen and (min-width: 768px) {
+        margin-left: 250px;
   }
 }
 

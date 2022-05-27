@@ -752,6 +752,17 @@ body {
   background-color: #2f303a;
 }
 
+@media screen and (min-width: 768px) {
+  .footer__logo--position {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
 .footer__logo {
   display: block;
   text-align: center;
@@ -825,6 +836,12 @@ body {
 
 .footer__tel:hover, .footer__tel:focus {
   color: #2196F3;
+}
+
+@media screen and (min-width: 768px) {
+  .social {
+    margin-left: 250px;
+  }
 }
 
 .social__primariText {
