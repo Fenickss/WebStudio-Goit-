@@ -494,11 +494,17 @@ body {
 }
 
 .section {
-  padding: 220px 0;
+  padding: 94px 0;
 }
 
 .hero__container {
   text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__container {
+    padding: 200px 0;
+  }
 }
 
 .hero {
@@ -561,9 +567,28 @@ body {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .feature__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-right: 30px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .feature__item {
     width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .feature__item {
+    width: 354px;
+    margin-right: 30px;
   }
 }
 
