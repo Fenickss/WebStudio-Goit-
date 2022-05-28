@@ -70,6 +70,13 @@
 .nav__item {
   position: relative;
   margin-left: 50px;
+  
+    &:first-child{
+      margin-left: 0;
+      @media screen and (min-width: 768){
+    } 
+  }
+
 }
 
 .nav__link {
