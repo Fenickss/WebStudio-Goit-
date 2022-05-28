@@ -572,10 +572,6 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin-right: 30px;
   }
 }
 
@@ -587,7 +583,6 @@ body {
 
 @media screen and (min-width: 1200px) {
   .feature__item {
-    width: 354px;
     margin-right: 30px;
   }
 }
@@ -598,6 +593,12 @@ body {
   border-radius: 4px;
   background-color: #F5F4FA;
   background-color: tomato;
+}
+
+@media screen and (min-width: 1200px) {
+  .feature__background {
+    width: 270px;
+  }
 }
 
 .feature__icon {

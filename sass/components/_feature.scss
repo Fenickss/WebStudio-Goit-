@@ -9,8 +9,7 @@
 
   @media screen and( min-width: 1200px) {
     display: flex;
-    justify-content: center;
-    margin-right: 30px;
+    
   }
 }
 
@@ -21,7 +20,7 @@
   }
 
   @media screen and( min-width: 1200px) {
-    width: 354px;
+    
     margin-right: 30px;
   }
 }
@@ -34,7 +33,10 @@
    background-color: $--background-icon; 
   background-color: tomato; 
 
-  
+  @media screen and( min-width: 1200px) {
+    width: 270px;
+    
+  }
 }
 
 .feature__icon {
