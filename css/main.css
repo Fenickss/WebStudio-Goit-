@@ -534,6 +534,15 @@ body {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    width: 696px;
+    font-size: 44px;
+    line-height: 60px;
+    text-align: center;
+  }
+}
+
 .hero__button {
   padding: 10px 32px;
   border: 1px solid #2196F3;
