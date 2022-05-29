@@ -32,6 +32,38 @@
               <a href="#" class="nav__link">Контакты</a>
             </li>
           </ul>
+
+          <button class="menu__button is-open" type="button" data-menu-open>
+            <svg
+              width="40px"
+              height="40px"
+              aria-label="переключатель мобильного меню"
+            >
+              <use
+                class="icon__cross"
+                href="./images/icons/sprite.svg#close-modal"
+              ></use>
+              <use
+                class="icon__menu--position"
+                href="./images/icons/sprite.svg#burger"
+              ></use>
+            </svg>
+          </button>
+          <div class="nav__menu" data-menu>
+            <button class="menu__button--close is-open" type="button" data-menu-close>
+              <svg
+                width="40px"
+                height="40px"
+                aria-label="переключатель мобильного меню"
+              >
+                <use
+                  class="icon__cross"
+                  href="./images/icons/sprite.svg#close-modal"
+                ></use>
+               
+              </svg>
+            </button>
+          </div>
         </nav>
         <ul class="contact__list">
           <li class="contact__item">
@@ -58,7 +90,7 @@
      ===========================-->
 
     <main>
-      <section class="section hero">
+      <section class="section hero" >
         <div class="container hero__container">
           <div>
             <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
@@ -332,7 +364,7 @@
         </div>
       </section>
 
-      <section class="section ">
+      <section class="section">
         <div class="container">
           <h1 class="customer__primariTitle">Постоянные клиенты</h1>
           <ul class="customer__list">
@@ -546,5 +578,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
