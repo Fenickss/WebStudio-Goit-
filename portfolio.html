@@ -23,7 +23,7 @@
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="./index.html" class="nav__link">Студия</a>
+              <a href="./index.html" class="nav__link ">Студия</a>
             </li>
             <li class="nav__item">
               <a href="./portfolio.html" class="nav__link active">Портфолио</a>
@@ -32,6 +32,76 @@
               <a href="#" class="nav__link">Контакты</a>
             </li>
           </ul>
+
+          <button class="menu__button is-open" type="button" data-menu-open>
+            <svg
+              width="40px"
+              height="40px"
+              aria-label="переключатель мобильного меню"
+            >
+              <use
+                class="icon__cross"
+                href="./images/icons/sprite.svg#close-modal"
+              ></use>
+              <use
+                class="icon__menu--position"
+                href="./images/icons/sprite.svg#burger"
+              ></use>
+            </svg>
+          </button>
+          <div class="nav__menu" data-menu>
+            <button class="menu__button--close is-open" type="button" data-menu-close>
+              <svg
+                width="40px"
+                height="40px"
+                aria-label="переключатель мобильного меню"
+              >
+                <use
+                  class="icon__cross"
+                  href="./images/icons/sprite.svg#close-modal"
+                ></use>
+               
+              </svg>
+            </button>
+
+            <nav class="mobile__nav">
+              <ul class="mobileNav__list">
+                <li class="mobileNav__item">
+                  <a href="/" class="mobileNav__link ">Студия</a>
+                </li>
+                <li class="mobileNav__item">
+                  <a href="./portfolio.html" class="mobileNav__link active">Портфолио</a>
+                </li>
+                <li class="mobileNav__item">
+                  <a href="#" class="mobileNav__link">Контакты</a>
+                </li>
+              </ul>
+
+              <ul class="mobileContact__list">
+                <li class="mobileContact__item">
+                  <a class="mobileContact__link" href="tel:+38 096 111 11 11">+38 096 111 11 11</a>
+                </li>
+                <li class="mobileContact__item">
+                  <a class="mobileContact__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+              </ul>
+
+              <ul class="mobileSocial__list">
+                <li class="mobileSocial__item">
+                  <a class="mobileSocial__link" href="#">Instagram</a>
+                </li>
+                <li class="mobileSocial__item">
+                  <a class="mobileSocial__link" href="#">Twitter</a>
+                </li>
+                <li class="mobileSocial__item">
+                  <a class="mobileSocial__link" href="#">Facebook</a>
+                </li>
+                <li class="mobileSocial__item">
+                  <a class="mobileSocial__link" href="#">Facebook</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
         </nav>
         <ul class="contact__list">
           <li class="contact__item">
@@ -58,7 +128,7 @@
       <section class="section section__project">
         <h1 class="main__primariTitle">Фильтр</h1>
         <div class="container filter--position">
-          <button class="filter-link filter__link__colorBlue" type="button">
+          <button class="filter-link filter__link__colorBlue "  type="button">
             Все
           </button>
           <button class="filter-link" type="button">Веб-сайты</button>
@@ -322,5 +392,8 @@
         </div>
       </div>
     </footer>
+
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

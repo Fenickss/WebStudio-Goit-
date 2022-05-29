@@ -16,12 +16,14 @@
 } 
  
 .filter-link {
+  @extend %button;
   height: 38px;
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 0.03em;
   border-radius: 4px;
   border: 0;
+  
   line-height: 26px;
   margin-right: 0;
   
@@ -50,7 +52,7 @@
   }
 
   @media screen and (max-width: 1200px) {
-    width: 128px;
+    width: 110px;
     
     margin-bottom: 15px;
   }
@@ -62,4 +64,9 @@
     
     
   }
+}
+
+.filter__link__colorBlue{
+  color: white;
+  background-color: $--accent-color;
 }
