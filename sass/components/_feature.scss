@@ -1,7 +1,7 @@
 .feature__list {
   @extend %list;
 
-  @media screen and( min-width: 768px) {
+  @media screen and( max-width: 1200px) {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap; 
@@ -20,8 +20,11 @@
   }
 
   @media screen and( min-width: 1200px) {
-    
     margin-right: 30px;
+
+    &:last-child{
+      margin-right: 0;
+    }
   }
 }
 
@@ -34,7 +37,9 @@
   background-color: tomato; 
 
   @media screen and( min-width: 1200px) {
+    
     width: 270px;
+
     
   }
 }
@@ -47,14 +52,17 @@
 }
 
 .feature__title {
+  width: 100%;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.14;
 
   margin-bottom: 10px;
+
 }
 
 .feature__text {
+  width: 100%;
   font-size: 14px;
   line-height: 1.71;
 

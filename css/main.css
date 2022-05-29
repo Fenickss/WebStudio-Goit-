@@ -563,7 +563,7 @@ body {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1200px) {
   .feature__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -594,6 +594,9 @@ body {
   .feature__item {
     margin-right: 30px;
   }
+  .feature__item:last-child {
+    margin-right: 0;
+  }
 }
 
 .feature__background {
@@ -618,6 +621,7 @@ body {
 }
 
 .feature__title {
+  width: 100%;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.14;
@@ -625,6 +629,7 @@ body {
 }
 
 .feature__text {
+  width: 100%;
   font-size: 14px;
   line-height: 1.71;
   margin-bottom: 30px;
