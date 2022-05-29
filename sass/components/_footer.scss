@@ -4,15 +4,19 @@
 }
 
 .footer__logo--position {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
     display: inline-flex;
     align-items: flex-start;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
   }
 }
 
 .footer__logo {
   display: block;
-  text-align: center;
+
   margin-bottom: 20px;
   font-family: raleway, sans-serif;
   text-decoration: none;
@@ -20,6 +24,10 @@
   font-size: 26px;
   line-height: 1.19;
   color: $--accent-color;
+
+  @media screen and (max-width: 1200px) {
+    text-align: center;
+  }
 }
 
 .footer__logo--colorWhite {
@@ -31,26 +39,33 @@
 }
 
 .address__text {
-  display: block;
   font-style: normal;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
   margin-bottom: 9px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  text-align: center;
+
   color: $--primary-white-color;
 
   &:hover,
   &:focus {
     color: $--accent-color;
   }
+
+  @media screen and (max-width: 1200px) {
+    display: block;
+    text-align: center;
+  }
 }
 
 .footer__contactList {
   @extend %list;
-  text-align: center;
-  margin-bottom: 60px;
+
+  @media screen and (max-width: 1200px) {
+    text-align: center;
+    margin-bottom: 60px;
+  }
 }
 
 .footer__contactItem {
@@ -86,9 +101,13 @@
   }
 }
 
-.social{
-  @media screen and (min-width: 768px) {
-        margin-left: 250px;
+.social {
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    margin-left: 250px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
   }
 }
 
@@ -105,15 +124,20 @@
 .social__list {
   @extend %list;
   display: flex;
-  justify-content: center;
+
+  @media screen and (max-width: 1200px) {
+    justify-content: center;
+  }
+}
+
+.social__item + .social__item {
+  margin-left: 10px;
 }
 
 .social__icon {
   display: flex;
   width: 44px;
   height: 44px;
-  margin-right: 10px;
-  margin-bottom: 60px;
   padding: 12px;
   fill: $--primary-white-color;
   background-color: $--footer-background-icon;
@@ -127,6 +151,17 @@
   &:last-child {
     margin-right: 0;
   }
+
+  @media screen and (max-width: 1200px) {
+    margin-right: 10px;
+    margin-bottom: 60px;
+  }
+}
+
+.mailing__form {
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+  }
 }
 
 .mailing__label {
@@ -134,15 +169,18 @@
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;
-  margin-bottom: 20px;
   text-transform: uppercase;
-  text-align: center;
   color: $--primary-white-color;
+  
+  @media screen and (max-width: 1200px) {
+    margin-bottom: 20px;
+    text-align: center;
+  }
 }
 
 .formFooter__input {
   display: inline-block;
-  width: 100%;
+  width: 358px;
   height: 50px;
 
   margin-bottom: 20px;
@@ -153,15 +191,12 @@
   border: 1px solid rgba(255, 255, 255, 0.3);
   color: $--primary-white-color;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 1200px) {
     display: block;
-    width: 450px;
+    max-width: 450px;
     margin-left: auto;
     margin-right: auto;
-
-    
-}
-
+  }
 }
 
 .form__button {
