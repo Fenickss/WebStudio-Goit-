@@ -43,6 +43,14 @@
       margin-right: 0;
     }
   }
+
+  @media screen and (min-width: 1200px){
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+
+  
 }
 
 .customer__icon {
@@ -63,6 +71,11 @@
 
   @media screen and(min-width: 768px) and (max-width: 1200px){
     width: 226px;
+    height: 92px;
+  }
+  
+  @media screen and(min-width: 1200px){
+    width: 170px;
     height: 92px;
   }
 }
