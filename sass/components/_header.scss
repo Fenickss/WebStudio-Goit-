@@ -41,11 +41,6 @@
   align-items: center;
   justify-content: space-between;
 
-  @media screen and (min-width: 768px) {
-  }
-
-  @media screen and (min-width: 768px) {
-  }
 }
 
 .nav__list {
@@ -67,6 +62,8 @@
   }
 }
 
+.nav
+
 .menu__button {
   @media screen and (max-width: 767px) {
     display: inline-flex;
@@ -78,6 +75,10 @@
   }
   @media screen and (min-width: 768px) {
     display: none;
+  }
+
+  &:hover, &:focus{
+    fill: $--accent-color;
   }
 }
 
@@ -117,6 +118,10 @@
   right: 0;
   background-color: #ffffff;
   border: none;
+
+  &:hover, &:focus{
+    fill: $--accent-color;
+  }
 }
 
 .contact__list {
@@ -129,8 +134,6 @@
 
   &:first-child {
     margin-left: 0;
-    @media screen and (min-width: 768px) {
-    }
   }
 }
 
@@ -152,11 +155,18 @@
   letter-spacing: 0.02em;
 
   margin-left: 40px;
+
+  
 }
 
 .mobileNav__link {
   color: black;
   text-decoration: none;
+
+  &:hover, &:focus{
+    color: $--accent-color;
+  }
+  
 }
 
 .mobileContact__list {
@@ -227,7 +237,15 @@
   line-height: 1.14;
   text-decoration: none;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 1200px) {
+    &:hover, &:focus{
+      color: $--accent-color;
+    }
+  }
 }
+
+
 
 .active {
   @include primariColor($--accent-color);

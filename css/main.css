@@ -367,7 +367,7 @@ body {
 }
 
 @media screen and (max-width: 767px) {
-  .menu__button {
+  .nav .menu__button {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
@@ -379,9 +379,13 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .menu__button {
+  .nav .menu__button {
     display: none;
   }
+}
+
+.nav .menu__button:hover, .nav .menu__button:focus {
+  fill: #2196F3;
 }
 
 .menu__button .icon__cross {
@@ -417,6 +421,10 @@ body {
   right: 0;
   background-color: #ffffff;
   border: none;
+}
+
+.menu__button--close:hover, .menu__button--close:focus {
+  fill: #2196F3;
 }
 
 .contact__list {
@@ -458,6 +466,10 @@ body {
 .mobileNav__link {
   color: black;
   text-decoration: none;
+}
+
+.mobileNav__link:hover, .mobileNav__link:focus {
+  color: #2196F3;
 }
 
 .mobileContact__list {
@@ -530,6 +542,12 @@ body {
   text-decoration: none;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 1200px) {
+  .nav__link:hover, .nav__link:focus {
+    color: #2196F3;
+  }
 }
 
 .active {
@@ -1324,6 +1342,7 @@ body {
 
 @media screen and (min-width: 1200px) {
   .formFooter__input {
+    width: 358px;
     margin-top: 20px;
   }
 }
