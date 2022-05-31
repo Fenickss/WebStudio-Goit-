@@ -1640,6 +1640,7 @@ body {
   position: absolute;
   top: 94px;
   right: 15px;
+  display: block;
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -1797,8 +1798,8 @@ body {
 }
 
 .icon__checkbox {
-  width: 16px;
-  height: 15px;
+  width: 17px;
+  height: 16px;
   border: 2px solid black;
   border-radius: 2px;
 }
