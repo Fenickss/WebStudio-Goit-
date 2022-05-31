@@ -1805,9 +1805,11 @@ body {
 }
 
 .checkbox:checked ~ .icon__checkbox {
+  display: block;
+  max-width: 100%;
   background-image: url(/images/icons/icon-check.svg);
   background-size: contain;
-  background-repeat: round;
+  background-repeat: no-repeat;
   background-color: #2196F3;
   border-color: #2196F3;
 }
