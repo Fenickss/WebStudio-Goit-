@@ -99,9 +99,11 @@
 }
 
 .team__icon {
-  display: flex;
-  width: 20px;
-  height: 20px;
+  display: inline-flex;
+  width: 44px;
+  padding: 12px;
+  height: 44px;
+  
 
   border-radius: 50%;
   fill: $--color-icon;
