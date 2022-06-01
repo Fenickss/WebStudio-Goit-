@@ -4,9 +4,15 @@
 
 .hero__container {
   text-align: center;
+  padding: 42px 0;
+  
+
+  @media screen and (min-width: 768px) {
+    padding: 59px 0;
+  }
 
   @media screen and (min-width: 1200px) {
-    padding: 200px 0;
+    padding: 94px 0;
   }
 }
 
