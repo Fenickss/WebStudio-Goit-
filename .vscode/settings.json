@@ -22,5 +22,6 @@
 ],
 "configurations": [
 
-]
+],
+"liveServer.settings.port": 5501
 }
